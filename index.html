@@ -3677,8 +3677,9 @@
       btn.addEventListener('click', async function (e) {
         e.preventDefault();
 
-        // Cas mobile : menu de partage natif
-        if (navigator.share) {
+        // Partage natif UNIQUEMENT sur mobile (sinon, copie du lien sur ordinateur)
+        const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+        if (isMobile && navigator.share) {
           try {
             await navigator.share({ title: SHARE_TITLE, url: SHARE_URL });
           } catch (err) {
