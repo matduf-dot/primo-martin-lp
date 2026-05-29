@@ -13,9 +13,14 @@
   <meta property="og:url" content="https://primomartin.com">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://primomartin.com/og-image.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <!-- Favicon (package favicon.io) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -2521,9 +2526,9 @@
             <path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="#" class="flex-1 md:flex-none inline-flex items-center justify-center gap-2 bg-white border border-brand-600 text-brand-700 hover:bg-brand-50 transition text-xs md:text-sm font-semibold px-3 md:px-5 py-3 rounded-lg whitespace-nowrap">
-          <span class="md:hidden">Partager</span>
-          <span class="hidden md:inline">Partage le bon plan</span>
+        <a href="#" data-share-btn class="flex-1 md:flex-none inline-flex items-center justify-center gap-2 bg-white border border-brand-600 text-brand-700 hover:bg-brand-50 transition text-xs md:text-sm font-semibold px-3 md:px-5 py-3 rounded-lg whitespace-nowrap">
+          <span class="md:hidden share-label">Partager</span>
+          <span class="hidden md:inline share-label">Partage le bon plan</span>
           <svg viewBox="0 0 24 24" class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="18" cy="5" r="3"/>
             <circle cx="6" cy="12" r="3"/>
@@ -3646,6 +3651,59 @@
       // Sécurité : ferme le menu si on repasse en desktop (lg+, où la nav inline réapparaît)
       const mq = window.matchMedia('(min-width: 1024px)');
       mq.addEventListener('change', (e) => { if(e.matches) close(); });
+    })();
+  </script>
+
+  <script>
+    // ============================================================================
+    // BOUTON "Partage le bon plan" — Web Share natif (mobile) ou copie du lien (desktop).
+    // ============================================================================
+    (function () {
+      const btn = document.querySelector('[data-share-btn]');
+      if (!btn) return;
+
+      const SHARE_TITLE = "Primo Martin — Logiciel métier MAR";
+      const SHARE_URL   = "https://primomartin.com/";
+
+      function flashCopied() {
+        const labels = btn.querySelectorAll('.share-label');
+        const originals = [];
+        labels.forEach((el, i) => { originals[i] = el.textContent; el.textContent = "Lien copié !"; });
+        setTimeout(() => {
+          labels.forEach((el, i) => { el.textContent = originals[i]; });
+        }, 2000);
+      }
+
+      btn.addEventListener('click', async function (e) {
+        e.preventDefault();
+
+        // Cas mobile : menu de partage natif
+        if (navigator.share) {
+          try {
+            await navigator.share({ title: SHARE_TITLE, url: SHARE_URL });
+          } catch (err) {
+            // L'utilisateur a annulé le partage : on ne fait rien.
+          }
+          return;
+        }
+
+        // Cas desktop : copie du lien propre + confirmation
+        try {
+          await navigator.clipboard.writeText(SHARE_URL);
+          flashCopied();
+        } catch (err) {
+          // Repli si l'API Clipboard est indisponible (http non sécurisé, vieux navigateur)
+          const tmp = document.createElement('textarea');
+          tmp.value = SHARE_URL;
+          tmp.setAttribute('readonly', '');
+          tmp.style.position = 'absolute';
+          tmp.style.left = '-9999px';
+          document.body.appendChild(tmp);
+          tmp.select();
+          try { document.execCommand('copy'); flashCopied(); } catch (e2) {}
+          document.body.removeChild(tmp);
+        }
+      });
     })();
   </script>
 
