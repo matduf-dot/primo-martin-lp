@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Primo Martin — Accueil</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: {
+            900: '#0b2238',
+            800: '#0e2a44',
+            700: '#123451',
+          },
+          panel: '#f3f5f8',
+          welcome: {
+            from: '#0f4c7a',
+            to:   '#1c6aa3',
+          }
+        },
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: #cdd6e0; border-radius: 8px; }
+  body { -webkit-font-smoothing: antialiased; }
+</style>
+</head>
+<body class="font-sans bg-panel text-slate-800">
+
+<div class="flex min-h-screen">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="w-[244px] shrink-0 bg-gradient-to-b from-[#143a5c] to-[#0d2742] text-slate-300 flex flex-col fixed h-screen z-20 hidden lg:flex">
+    <!-- Logo -->
+    <div class="flex items-center gap-2.5 px-5 pt-5 pb-6">
+      <img src="logo-primo-martin-white.png" alt="Primo Martin" class="w-7 h-7 object-contain" />
+      <span class="text-white font-bold text-[17px] tracking-tight">Primo Martin</span>
+      <button class="ml-auto text-slate-500 hover:text-slate-300">
+        <i data-lucide="panel-left" class="w-4 h-4"></i>
+      </button>
+    </div>
+
+    <!-- Nav -->
+    <nav class="flex-1 px-3 space-y-6 overflow-y-auto">
+      <!-- MON ACTIVITÉ -->
+      <div>
+        <p class="px-3 mb-2 text-[10px] font-semibold tracking-[0.12em] text-slate-500">MON ACTIVITÉ</p>
+        <ul class="space-y-0.5 text-[14px]">
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#2b5476] text-white font-medium shadow-sm shadow-black/10">
+              <i data-lucide="home" class="w-[18px] h-[18px]"></i> Accueil
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="users" class="w-[18px] h-[18px]"></i> Clients
+              <span class="ml-auto text-[11px] font-semibold bg-white/10 text-slate-200 px-2 py-0.5 rounded-full">12</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="inbox" class="w-[18px] h-[18px]"></i> Demandes
+              <span class="ml-auto text-[11px] font-semibold bg-sky-500 text-white px-2 py-0.5 rounded-full">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="briefcase" class="w-[18px] h-[18px]"></i> Missions MAR
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="file-text" class="w-[18px] h-[18px]"></i> Missions Audit
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MON ÉQUIPE -->
+      <div>
+        <p class="px-3 mb-2 text-[10px] font-semibold tracking-[0.12em] text-slate-500">MON ÉQUIPE</p>
+        <ul class="space-y-0.5 text-[14px]">
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="user-round" class="w-[18px] h-[18px]"></i> Collaborateurs
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="bar-chart-3" class="w-[18px] h-[18px]"></i> Statistiques
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MES OUTILS -->
+      <div>
+        <p class="px-3 mb-2 text-[10px] font-semibold tracking-[0.12em] text-slate-500">MES OUTILS</p>
+        <ul class="space-y-0.5 text-[14px]">
+          <li>
+            <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2b5476]/40 transition">
+              <i data-lucide="calendar" class="w-[18px] h-[18px]"></i> Calendrier
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Profil bas -->
+    <div class="p-3">
+      <div class="flex items-center gap-3 bg-white/5 rounded-xl px-3 py-3">
+        <div class="w-9 h-9 shrink-0 rounded-full bg-sky-600 text-white flex items-center justify-center text-[13px] font-bold">MD</div>
+        <div class="min-w-0">
+          <p class="text-white text-[13.5px] font-semibold leading-tight truncate">Mathis Dufour</p>
+          <p class="text-slate-400 text-[11px] leading-tight truncate">SIRET 830 542 117 00028</p>
+        </div>
+        <button class="ml-auto text-slate-400 hover:text-slate-200">
+          <i data-lucide="settings" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="flex-1 lg:ml-[244px] px-6 lg:px-8 py-6">
+
+    <!-- Topbar -->
+    <div class="flex items-center gap-4 mb-6">
+      <div class="relative flex-1 max-w-2xl">
+        <i data-lucide="search" class="w-[18px] h-[18px] text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+        <input type="text" placeholder="Rechercher un client, un dossier, une adresse…"
+          class="w-full bg-white border border-slate-200 rounded-xl pl-11 pr-4 py-3 text-[14px] text-slate-700 placeholder:text-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-200" />
+      </div>
+      <button class="relative ml-auto w-11 h-11 bg-white border border-slate-200 rounded-full flex items-center justify-center shadow-sm text-slate-600 hover:bg-slate-50">
+        <i data-lucide="bell" class="w-[19px] h-[19px]"></i>
+        <span class="absolute -top-0.5 -right-0.5 w-5 h-5 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">3</span>
+      </button>
+    </div>
+
+    <!-- Carte de bienvenue -->
+    <section class="rounded-2xl bg-gradient-to-r from-welcome-from to-welcome-to text-white px-7 py-6 shadow-md mb-6">
+      <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+        <div class="flex-1">
+          <h1 class="text-[26px] font-bold tracking-tight">Bonjour Mathis.</h1>
+          <p class="text-sky-100/90 text-[14.5px] mt-1">
+            Mardi 13 mai · <span class="font-semibold text-white">4 demandes</span> à qualifier,
+            <span class="font-semibold text-white">2 dossiers</span> en retard d'instruction.
+          </p>
+        </div>
+        <div class="grid grid-cols-4 gap-7 lg:gap-9">
+          <div class="text-center lg:text-left">
+            <p class="text-[28px] font-extrabold leading-none">4</p>
+            <p class="text-[10px] tracking-wide text-sky-200 mt-1.5">À QUALIFIER</p>
+          </div>
+          <div class="text-center lg:text-left">
+            <p class="text-[28px] font-extrabold leading-none">18</p>
+            <p class="text-[10px] tracking-wide text-sky-200 mt-1.5">EN COURS</p>
+          </div>
+          <div class="text-center lg:text-left">
+            <p class="text-[28px] font-extrabold leading-none">5</p>
+            <p class="text-[10px] tracking-wide text-sky-200 mt-1.5">À VALIDER</p>
+          </div>
+          <div class="text-center lg:text-left">
+            <p class="text-[28px] font-extrabold leading-none flex items-start gap-1 justify-center lg:justify-start">
+              28 <span class="text-[11px] font-semibold text-emerald-300 mt-1">↑+22%</span>
+            </p>
+            <p class="text-[10px] tracking-wide text-sky-200 mt-1.5">TERMINÉS 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deux colonnes -->
+    <div class="grid grid-cols-1 xl:grid-cols-[1fr_360px] gap-6 mb-8">
+
+      <!-- Mes dossiers en cours -->
+      <section class="bg-white rounded-2xl border border-slate-200/70 shadow-sm p-6">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="text-[16px] font-bold text-slate-800">Mes dossiers en cours</h2>
+          <a href="#" class="text-[13px] font-medium text-sky-700 hover:text-sky-800 flex items-center gap-1">
+            Voir tous les dossiers <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="space-y-6">
+          <!-- 1 -->
+          <div class="flex items-start gap-4">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-[12px] font-bold flex items-center justify-center mt-0.5">1</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[15px]">Demandes à qualifier</p>
+                <span class="text-[15px] font-bold text-slate-700">4</span>
+              </div>
+              <p class="text-[12.5px] text-slate-500 mt-0.5">4 prospects entrants · plus récent il y a 2 h</p>
+              <div class="mt-2 h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
+                <div class="h-full rounded-full bg-amber-500" style="width:32%"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="flex items-start gap-4">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-[12px] font-bold flex items-center justify-center mt-0.5">2</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[15px]">Missions actives</p>
+                <span class="text-[15px] font-bold text-slate-700">18</span>
+              </div>
+              <p class="text-[12.5px] text-slate-500 mt-0.5">8 audits · 10 MAR globale · 3 visites cette semaine</p>
+              <div class="mt-2 h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
+                <div class="h-full rounded-full bg-sky-600" style="width:82%"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="flex items-start gap-4">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-[12px] font-bold flex items-center justify-center mt-0.5">3</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[15px]">CERFA à transmettre</p>
+                <span class="text-[15px] font-bold text-slate-700">5</span>
+              </div>
+              <p class="text-[12.5px] text-slate-500 mt-0.5">5 dossiers prêts · délai moyen ANAH 12 jours</p>
+              <div class="mt-2 h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
+                <div class="h-full rounded-full bg-sky-600" style="width:42%"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="flex items-start gap-4">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-[12px] font-bold flex items-center justify-center mt-0.5">4</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[15px]">Dossiers payés</p>
+                <span class="text-[15px] font-bold text-slate-700">28</span>
+              </div>
+              <p class="text-[12.5px] text-slate-500 mt-0.5">28 sur 2026 · 142 k€ d'aides versées</p>
+              <div class="mt-2 h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
+                <div class="h-full rounded-full bg-emerald-500" style="width:90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ma semaine -->
+      <section class="bg-white rounded-2xl border border-slate-200/70 shadow-sm p-6">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="text-[16px] font-bold text-slate-800">Ma semaine</h2>
+          <a href="#" class="text-[13px] font-medium text-sky-700 hover:text-sky-800 flex items-center gap-1">
+            Agenda <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Mardi -->
+        <p class="text-[10.5px] font-semibold tracking-[0.1em] text-slate-400 mb-3">MARDI 13 · AUJOURD'HUI</p>
+        <div class="space-y-4 mb-6">
+          <div class="flex gap-3">
+            <span class="text-[12.5px] font-semibold text-slate-500 w-11 shrink-0 pt-0.5">10:30</span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[14px]">Visite Bessonet</p>
+                <span class="text-[10px] font-semibold tracking-wide bg-sky-50 text-sky-700 px-2 py-0.5 rounded">VISITE</span>
+              </div>
+              <p class="text-[12px] text-slate-500 mt-0.5">12 r. des Lilas — Toulouse</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-[12.5px] font-semibold text-slate-500 w-11 shrink-0 pt-0.5">14:00</span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[14px]">RDV qualification</p>
+                <span class="text-[10px] font-semibold tracking-wide bg-violet-50 text-violet-700 px-2 py-0.5 rounded">RDV</span>
+              </div>
+              <p class="text-[12px] text-slate-500 mt-0.5">Famille Tournier — visio</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-[12.5px] font-semibold text-slate-500 w-11 shrink-0 pt-0.5">16:30</span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[14px]">Relance ANAH</p>
+                <span class="text-[10px] font-semibold tracking-wide bg-amber-50 text-amber-700 px-2 py-0.5 rounded">APPEL</span>
+              </div>
+              <p class="text-[12px] text-slate-500 mt-0.5">Dossier Delmas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mercredi -->
+        <p class="text-[10.5px] font-semibold tracking-[0.1em] text-slate-400 mb-3">MERCREDI 14</p>
+        <div class="space-y-4">
+          <div class="flex gap-3">
+            <span class="text-[12.5px] font-semibold text-slate-500 w-11 shrink-0 pt-0.5">09:00</span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[14px]">Visite Bouchard</p>
+                <span class="text-[10px] font-semibold tracking-wide bg-sky-50 text-sky-700 px-2 py-0.5 rounded">VISITE</span>
+              </div>
+              <p class="text-[12px] text-slate-500 mt-0.5">17 r. St-Aubin — Angers</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-[12.5px] font-semibold text-slate-500 w-11 shrink-0 pt-0.5">15:00</span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-slate-800 text-[14px]">Restitution audit</p>
+                <span class="text-[10px] font-semibold tracking-wide bg-violet-50 text-violet-700 px-2 py-0.5 rounded">RDV</span>
+              </div>
+              <p class="text-[12px] text-slate-500 mt-0.5">M. Roux</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- À faire aujourd'hui -->
+    <div class="flex items-center justify-between">
+      <div>
+        <h3 class="text-[16px] font-bold text-slate-800">À faire aujourd'hui</h3>
+        <p class="text-[13px] text-slate-500 mt-0.5">3 tâches assignées, dont 1 en retard.</p>
+      </div>
+      <a href="#" class="text-[13px] font-medium text-sky-700 hover:text-sky-800 flex items-center gap-1">
+        Toutes mes tâches <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

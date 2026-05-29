@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conditions Générales d'Utilisation et de Vente — Primo Martin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Manrope', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50:  '#eff5ff', 100: '#dbe7fe', 200: '#bfd3fe',
+              500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#0b1f4d',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Manrope', ui-sans-serif, system-ui; color: #0b1f4d; background-color: #fafbfd; }
+    .legal h2 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.375rem; font-weight: 700; color: #0b1f4d; letter-spacing: -0.01em; }
+    @media (min-width: 768px) { .legal h2 { font-size: 1.5rem; margin-top: 3rem; } }
+    .legal h3 { margin-top: 1.75rem; margin-bottom: 0.75rem; font-size: 1.0625rem; font-weight: 600; color: #0b1f4d; }
+    .legal p  { margin-bottom: 1rem; font-size: 15px; line-height: 1.75; color: #334155; }
+    .legal ul { margin-bottom: 1.25rem; padding-left: 1.5rem; list-style: disc; font-size: 15px; line-height: 1.75; color: #334155; }
+    .legal ul li { margin-bottom: 0.5rem; }
+    .legal ul li strong { color: #0b1f4d; }
+    .legal a { color: #1d4ed8; text-decoration: underline; text-underline-offset: 2px; }
+    .legal a:hover { color: #2563eb; }
+    .legal strong { color: #0b1f4d; font-weight: 600; }
+    .legal blockquote { margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 3px solid #2563eb; background-color: #eff5ff; border-radius: 0 0.5rem 0.5rem 0; color: #0b1f4d; font-size: 14.5px; line-height: 1.7; }
+    .legal blockquote p { margin-bottom: 0; color: #0b1f4d; }
+  </style>
+</head>
+<body class="bg-[#fafbfd]">
+
+  <header class="sticky top-0 z-40 bg-[#fafbfd]/80 backdrop-blur border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="asset-logo/logo-primo-martin.png" alt="Primo Martin" class="h-9 w-9 object-contain shrink-0" />
+        <span class="font-extrabold tracking-tight text-[15px] leading-none text-brand-900">Primo Martin</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-600">
+        <a href="index.html#parcours" class="hover:text-brand-700 transition">Fonctionnalités</a>
+        <a href="index.html#pricing" class="hover:text-brand-700 transition">Pour qui</a>
+        <a href="index.html#pricing" class="hover:text-brand-700 transition">Tarifs</a>
+        <a href="index.html#faq" class="hover:text-brand-700 transition">FAQ</a>
+      </nav>
+      <a href="index.html#cta" class="hidden md:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 transition text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-sm">
+        Démarrer<span class="hidden sm:inline">&nbsp;gratuitement</span>
+        <svg viewBox="0 0 20 20" fill="none" class="w-4 h-4"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button type="button" data-menu-toggle aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden -mr-2 w-11 h-11 inline-flex items-center justify-center rounded-lg text-brand-900 hover:bg-slate-900/5 active:bg-slate-900/10 transition">
+        <svg data-menu-icon-bars viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg data-menu-icon-x viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden w-6 h-6" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" data-menu aria-hidden="true" class="md:hidden fixed inset-x-0 top-16 bottom-0 z-50 opacity-0 invisible pointer-events-none transition-opacity duration-200 ease-out">
+    <div data-menu-backdrop class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"></div>
+    <div data-menu-panel class="relative bg-white border-b border-slate-200/70 shadow-xl rounded-b-2xl transform -translate-y-2 transition-transform duration-200 ease-out">
+      <nav class="px-6 pt-5 pb-4 flex flex-col">
+        <a href="index.html#parcours" data-menu-link class="py-3 text-[15px] font-semibold text-brand-900 hover:text-brand-700 transition border-b border-slate-100">Fonctionnalités</a>
+        <a href="index.html#pricing"  data-menu-link class="py-3 text-[15px] font-semibold text-brand-900 hover:text-brand-700 transition border-b border-slate-100">Pour qui</a>
+        <a href="index.html#pricing"  data-menu-link class="py-3 text-[15px] font-semibold text-brand-900 hover:text-brand-700 transition border-b border-slate-100">Tarifs</a>
+        <a href="index.html#faq"      data-menu-link class="py-3 text-[15px] font-semibold text-brand-900 hover:text-brand-700 transition border-b border-slate-100">FAQ</a>
+        <a href="#"                   data-menu-link class="py-3 text-[15px] font-semibold text-brand-900 hover:text-brand-700 transition">Connexion</a>
+      </nav>
+      <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+        <a href="index.html#cta" data-menu-link class="inline-flex w-full items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 transition text-white text-sm font-semibold px-5 py-3 rounded-lg shadow-sm">
+          Démarrer gratuitement
+          <svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 shrink-0" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-3xl mx-auto px-6 lg:px-8 py-10 sm:py-14 lg:py-20">
+    <a href="index.html" class="inline-flex items-center gap-1.5 text-[13px] text-slate-500 hover:text-brand-700 transition">
+      <svg viewBox="0 0 20 20" fill="none" class="w-3.5 h-3.5" aria-hidden="true"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Retour à l'accueil
+    </a>
+
+    <h1 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-brand-900 leading-[1.1]">
+      Conditions Générales d'Utilisation et de Vente
+    </h1>
+    <p class="mt-3 text-sm text-slate-500">Dernière mise à jour : 28 mai 2026</p>
+
+    <article class="legal mt-8 sm:mt-10">
+      <h2>Préambule</h2>
+      <p>Les présentes Conditions Générales d'Utilisation et de Vente (ci-après « CGU/CGV ») régissent l'accès et l'utilisation du logiciel en ligne <strong>Primo Martin</strong> (ci-après le « Service »), édité par Mathis Dufour, entrepreneur individuel (micro-entreprise) exerçant sous le nom commercial « Primo Martin », immatriculé sous le numéro SIREN 923 901 151 (SIRET 923 901 151 00012) (ci-après l'« Éditeur »).</p>
+      <p>Le Service est un logiciel de gestion (SaaS) destiné <strong>exclusivement à des professionnels</strong> : accompagnateurs « Mon Accompagnateur Rénov' » (MAR), auditeurs énergétiques, cabinets et structures intervenant dans la rénovation énergétique.</p>
+      <blockquote><p><strong>Service réservé aux professionnels.</strong> Le Client reconnaît souscrire dans le cadre de son activité professionnelle. Les dispositions du Code de la consommation relatives aux consommateurs (dont le droit de rétractation de 14 jours) ne s'appliquent pas.</p></blockquote>
+      <p>Toute souscription emporte acceptation pleine et entière des présentes CGU/CGV.</p>
+
+      <h2>1. Définitions</h2>
+      <ul>
+        <li><strong>Service / Logiciel</strong> : la plateforme Primo Martin accessible en ligne, en mode SaaS.</li>
+        <li><strong>Client</strong> : le professionnel (personne physique ou morale) qui souscrit un abonnement.</li>
+        <li><strong>Utilisateur</strong> : toute personne accédant au Service via le compte du Client (collaborateur, associé, assistant).</li>
+        <li><strong>Ménage / Client final</strong> : la personne accompagnée par le Client, dont les données sont traitées dans le Service.</li>
+        <li><strong>Contenu Client</strong> : l'ensemble des données, documents et fichiers saisis ou importés par le Client et ses Utilisateurs.</li>
+      </ul>
+
+      <h2>2. Objet</h2>
+      <p>Les CGU/CGV ont pour objet de définir les conditions dans lesquelles l'Éditeur met le Service à la disposition du Client, ainsi que les droits et obligations de chacun.</p>
+
+      <h2>3. Inscription et compte</h2>
+      <p>L'accès au Service nécessite la création d'un compte. Le Client garantit l'exactitude des informations fournies (identité, SIRET, numéro d'agrément MAR le cas échéant). Le Client est responsable de la confidentialité de ses identifiants et de toute activité réalisée depuis son compte. Toute utilisation frauduleuse doit être signalée sans délai à l'Éditeur.</p>
+
+      <h2>4. Description des offres et abonnements</h2>
+      <p>Le Service est proposé sous forme d'abonnements mensuels, selon les offres décrites sur la page Tarifs du site (à titre indicatif : Solo, Cabinet, Entreprise). Chaque offre précise le nombre d'utilisateurs autorisés et les fonctionnalités incluses.</p>
+      <p>L'Éditeur se réserve le droit de faire évoluer le contenu des offres. Toute modification substantielle des fonctionnalités d'une offre en cours est notifiée au Client avec un préavis raisonnable.</p>
+
+      <h2>5. Prix et facturation</h2>
+      <p>Les prix sont indiqués en euros. L'Éditeur relevant du régime de la franchise en base de TVA, <strong>aucune TVA n'est appliquée</strong> (TVA non applicable, art. 293 B du CGI). Le tarif applicable est celui en vigueur au jour de la souscription.</p>
+      <p>L'abonnement est facturé d'avance, par période [mensuelle / annuelle], par prélèvement automatique via le prestataire de paiement Stripe (Stripe Payments Europe, Ltd.). Le Client autorise l'Éditeur à débiter le moyen de paiement enregistré à chaque échéance.</p>
+      <p>En cas de défaut de paiement, l'Éditeur peut suspendre l'accès au Service après mise en demeure restée infructueuse pendant [X] jours, sans préjudice du recouvrement des sommes dues. Conformément à l'article L. 441-10 du Code de commerce, tout retard de paiement entre professionnels entraîne de plein droit des pénalités de retard au taux légal applicable et une indemnité forfaitaire de recouvrement de 40 €.</p>
+
+      <h2>6. Révision des prix</h2>
+      <p>L'Éditeur peut réviser ses tarifs. Toute augmentation est notifiée au Client au moins [30] jours avant son entrée en vigueur. Le Client qui refuse la nouvelle tarification peut résilier son abonnement avant la date d'effet ; à défaut, la poursuite de l'utilisation vaut acceptation. Les tarifs « fondateur » consentis le cas échéant restent acquis selon les conditions communiquées lors de la souscription.</p>
+
+      <h2>7. Durée, renouvellement et résiliation</h2>
+      <p>L'abonnement est conclu pour une durée de [un mois / un an], renouvelable par tacite reconduction pour des périodes identiques.</p>
+      <p>Le Client peut résilier à tout moment depuis son espace de gestion ou par e-mail à <a href="mailto:mathis@primomartin.com">mathis@primomartin.com</a>. La résiliation prend effet à la fin de la période d'abonnement en cours ; les sommes déjà versées au titre de la période en cours ne sont pas remboursées.</p>
+      <p>L'Éditeur peut résilier ou suspendre l'accès en cas de manquement grave du Client aux présentes CGU/CGV (notamment non-paiement, usage illicite, atteinte à la sécurité du Service), après mise en demeure restée sans effet sous [15] jours, sauf urgence ou gravité justifiant une suspension immédiate.</p>
+
+      <h2>8. Récupération des données après résiliation</h2>
+      <p>À la résiliation, le Client dispose d'un délai de <strong>[30] jours</strong> pour exporter son Contenu Client (export PDF / données). Passé ce délai, l'Éditeur procède à la suppression ou à l'anonymisation des données, sous réserve des obligations légales de conservation (voir l'Accord de sous-traitance et la Politique de confidentialité). Le Client est seul responsable de la sauvegarde de ses données réglementaires (dossiers de rénovation à conserver jusqu'à 10 ans).</p>
+
+      <h2>9. Obligations du Client</h2>
+      <p>Le Client s'engage à :</p>
+      <ul>
+        <li>utiliser le Service conformément à sa destination professionnelle et à la réglementation applicable (Anah, MaPrimeRénov', EcoPTZ, RGPD) ;</li>
+        <li>ne saisir que des données exactes et qu'il est légalement autorisé à traiter ;</li>
+        <li>recueillir auprès des ménages les consentements et informations requis par le RGPD, en sa qualité de responsable de traitement de ces données ;</li>
+        <li>ne pas porter atteinte à la sécurité, à l'intégrité ou à la disponibilité du Service ;</li>
+        <li>s'assurer de la conformité finale des dossiers et documents générés avant tout dépôt officiel.</li>
+      </ul>
+      <p>L'Éditeur fournit des modèles et des aides au remplissage ; <strong>la responsabilité de l'exactitude et de la conformité des dossiers déposés incombe au Client.</strong></p>
+
+      <h2>10. Disponibilité et maintenance</h2>
+      <p>L'Éditeur s'efforce d'assurer la disponibilité du Service en continu, hors opérations de maintenance et cas de force majeure. Le Service est fourni en l'état, dans le cadre d'une <strong>obligation de moyens</strong>. L'Éditeur peut interrompre temporairement le Service pour maintenance, en informant le Client dans la mesure du possible.</p>
+
+      <h2>11. Propriété intellectuelle</h2>
+      <p>L'Éditeur conserve l'ensemble des droits de propriété intellectuelle sur le Service. La souscription confère au Client un <strong>droit d'usage personnel, non exclusif et non cessible</strong> pour la durée de l'abonnement. Le Client ne peut copier, décompiler, revendre ou mettre à disposition de tiers tout ou partie du Service.</p>
+      <p>Le Contenu Client reste la propriété du Client. Le Client accorde à l'Éditeur une licence limitée d'hébergement et de traitement de ce contenu, strictement nécessaire à la fourniture du Service.</p>
+
+      <h2>12. Données personnelles</h2>
+      <p>Le traitement des données personnelles est régi par la <strong><a href="confidentialite.html">Politique de confidentialité</a></strong> et, pour les données des ménages traitées pour le compte du Client, par l'<strong>Accord de sous-traitance (DPA)</strong>, qui font partie intégrante des présentes CGU/CGV.</p>
+
+      <h2>13. Responsabilité</h2>
+      <p>La responsabilité de l'Éditeur ne saurait être engagée pour :</p>
+      <ul>
+        <li>les dommages résultant d'une mauvaise utilisation du Service par le Client ou ses Utilisateurs ;</li>
+        <li>l'inexactitude des données saisies par le Client ;</li>
+        <li>la non-conformité des dossiers déposés auprès des organismes officiels ;</li>
+        <li>les pertes indirectes (perte de chiffre d'affaires, de clientèle, d'image).</li>
+      </ul>
+      <p>En tout état de cause, et dans la limite autorisée par la loi, la responsabilité totale de l'Éditeur envers le Client, toutes causes confondues, est plafonnée au <strong>montant des sommes effectivement versées par le Client au cours des [12] derniers mois</strong> précédant le fait générateur.</p>
+
+      <h2>14. Force majeure</h2>
+      <p>Aucune des parties ne pourra être tenue responsable d'un manquement résultant d'un cas de force majeure au sens de l'article 1218 du Code civil.</p>
+
+      <h2>15. Modification des CGU/CGV</h2>
+      <p>L'Éditeur peut modifier les présentes CGU/CGV. Les Clients sont informés de toute modification substantielle avec un préavis raisonnable. La poursuite de l'utilisation du Service vaut acceptation des CGU/CGV mises à jour.</p>
+
+      <h2>16. Droit applicable et juridiction</h2>
+      <p>Les présentes CGU/CGV sont régies par le droit français. <strong>À défaut de résolution amiable, tout litige sera soumis à la compétence exclusive des tribunaux de Lyon.</strong></p>
+    </article>
+  </main>
+
+  <footer class="bg-[#0a0a0f] text-slate-300 mt-16 sm:mt-24">
+    <div class="border-y border-slate-700/50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 sm:grid-cols-[auto_1fr_auto]">
+        <a href="index.html" class="flex items-center gap-2.5 py-4 sm:py-5 sm:pr-8 lg:pr-12 border-b sm:border-b-0 sm:border-r border-slate-700/50">
+          <img src="asset-logo/logo-primo-martin.png" alt="" class="h-7 w-7 object-contain shrink-0" style="filter: brightness(0) invert(1);"/>
+          <span class="text-white font-extrabold text-[15px] tracking-tight">Primo Martin</span>
+        </a>
+        <div class="hidden sm:block"></div>
+        <a href="mailto:mathis@primomartin.com" class="flex items-center gap-2 py-4 sm:py-5 sm:pl-8 lg:pl-12 sm:border-l sm:border-slate-700/50 text-slate-300 hover:text-white transition group">
+          <span class="text-sm">mathis@primomartin.com</span>
+          <svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 transition group-hover:translate-x-0.5" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10 sm:py-14 lg:py-20 grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-20">
+      <div>
+        <h3 class="text-2xl sm:text-3xl lg:text-[40px] font-extrabold tracking-tight leading-[1.15] text-white max-w-md">Le logiciel métier des MAR.</h3>
+        <p class="mt-5 text-slate-400 text-[15px] leading-relaxed max-w-md">De la qualification du prospect au versement Anah, sans en perdre le fil.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+        <div>
+          <p class="text-[11px] font-semibold tracking-[0.18em] text-slate-500 uppercase">Plan du site</p>
+          <ul class="mt-6">
+            <li><a href="index.html#parcours" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">Fonctionnalités</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="index.html#pricing" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">Tarifs</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="index.html#faq" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">FAQ</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="index.html" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">Le mot du fondateur</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold tracking-[0.18em] text-slate-500 uppercase">Légal</p>
+          <ul class="mt-6">
+            <li><a href="mentions-legales.html" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">Mentions légales</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="confidentialite.html" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">Politique de confidentialité</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="cgu.html" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-white hover:text-white transition group"><span class="text-sm font-semibold">CGU</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="cookies.html" class="flex items-center justify-between py-3 border-b border-slate-700/50 text-slate-300 hover:text-white transition group"><span class="text-sm">Paramètres cookies</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 text-slate-500 group-hover:text-white transition"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-700/50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 sm:grid-cols-3 items-center">
+        <div class="py-4 sm:py-5 sm:pr-6 lg:pr-12 border-b sm:border-b-0 sm:border-r border-slate-700/50 text-center sm:text-left"><p class="text-[13px] text-slate-500">© 2026 Primo Martin</p></div>
+        <div class="py-4 sm:py-5 sm:px-6 lg:px-12 border-b sm:border-b-0 sm:border-r border-slate-700/50 flex items-center justify-center gap-4">
+          <a href="#" aria-label="Facebook" class="text-slate-500 hover:text-white transition"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" class="text-slate-500 hover:text-white transition"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        </div>
+        <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="py-4 sm:py-5 sm:pl-6 lg:pl-12 flex items-center justify-center sm:justify-end gap-2 text-slate-400 hover:text-white transition group"><span class="text-[13px]">Retour en haut</span><svg viewBox="0 0 20 20" fill="none" class="w-4 h-4 transition group-hover:-translate-y-0.5"><path d="M10 16V4M6 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const toggleBtn = document.querySelector('[data-menu-toggle]');
+      const menu      = document.querySelector('[data-menu]');
+      if(!toggleBtn || !menu) return;
+      const iconBars = toggleBtn.querySelector('[data-menu-icon-bars]');
+      const iconX    = toggleBtn.querySelector('[data-menu-icon-x]');
+      const backdrop = menu.querySelector('[data-menu-backdrop]');
+      const panel    = menu.querySelector('[data-menu-panel]');
+      const links    = menu.querySelectorAll('[data-menu-link]');
+      let isOpen = false;
+      function open(){ if(isOpen) return; isOpen = true; menu.classList.remove('invisible','pointer-events-none','opacity-0'); menu.classList.add('opacity-100'); panel.classList.remove('-translate-y-2'); panel.classList.add('translate-y-0'); toggleBtn.setAttribute('aria-expanded','true'); toggleBtn.setAttribute('aria-label','Fermer le menu'); menu.setAttribute('aria-hidden','false'); iconBars.classList.add('hidden'); iconX.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+      function close(){ if(!isOpen) return; isOpen = false; menu.classList.add('opacity-0'); menu.classList.remove('opacity-100'); panel.classList.add('-translate-y-2'); panel.classList.remove('translate-y-0'); toggleBtn.setAttribute('aria-expanded','false'); toggleBtn.setAttribute('aria-label','Ouvrir le menu'); menu.setAttribute('aria-hidden','true'); iconBars.classList.remove('hidden'); iconX.classList.add('hidden'); document.body.style.overflow = ''; setTimeout(() => { if(!isOpen) menu.classList.add('invisible','pointer-events-none'); }, 200); }
+      toggleBtn.addEventListener('click', () => { isOpen ? close() : open(); });
+      backdrop.addEventListener('click', close);
+      links.forEach(l => l.addEventListener('click', close));
+      document.addEventListener('keydown', e => { if(e.key === 'Escape' && isOpen) close(); });
+      const mq = window.matchMedia('(min-width: 768px)');
+      mq.addEventListener('change', e => { if(e.matches) close(); });
+    })();
+  </script>
+</body>
+</html>
