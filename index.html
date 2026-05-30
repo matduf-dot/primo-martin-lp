@@ -1958,6 +1958,25 @@
     .copilot-ico { transition: background-color .25s ease, color .25s ease; }
     .copilot-item[data-open="true"] .copilot-ico { background-color: #2563eb; color: #fff; }
     .copilot-item[data-open="true"] { background-color: rgba(255,255,255,0.06); }
+
+    /* Titre "magique" — dégradé bleu animé (reflet clair qui glisse, ~6s, en boucle).
+       Fond sombre ici → on peut inclure du bleu pâle et du blanc sans perte de lisibilité. */
+    .copilot-title-shimmer {
+      background-image: linear-gradient(100deg,
+        #60a5fa 0%, #bfdbfe 25%, #ffffff 50%, #bfdbfe 75%, #60a5fa 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: copilot-shimmer 6s linear infinite;
+    }
+    @keyframes copilot-shimmer {
+      to { background-position: -200% center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .copilot-title-shimmer { animation: none; }
+    }
   </style>
   <section id="copilote" class="relative overflow-hidden bg-[#0b1f4d] bg-gradient-to-br from-[#0b1f4d] via-[#0c2657] to-[#081633] py-14 sm:py-20 lg:py-28">
 
@@ -1980,7 +1999,7 @@
       <!-- Bloc d'intro (pleine largeur en haut) -->
       <div class="max-w-3xl">
         <span class="inline-block text-[11px] font-semibold tracking-[0.18em] text-brand-200 uppercase">Ton copilote IA</span>
-        <h2 class="mt-4 sm:mt-5 text-2xl sm:text-3xl lg:text-[40px] font-extrabold tracking-tight leading-[1.25] sm:leading-[1.45] text-white">
+        <h2 class="copilot-title-shimmer mt-4 sm:mt-5 text-2xl sm:text-3xl lg:text-[40px] font-extrabold tracking-tight leading-[1.25] sm:leading-[1.45] text-white">
           Ton copilote réglementaire qui ne dort jamais et n'est jamais périmé.
         </h2>
         <p class="mt-5 text-[15px] sm:text-base leading-relaxed text-slate-300 max-w-2xl">
